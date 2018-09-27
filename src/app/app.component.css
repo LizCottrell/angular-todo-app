@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+    /* nothing here works */
+}
+
+.app-container {
+    display: flex;
+    font-family: Raleway, san-serif;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+}
+
+.form-container {
+    flex-grow: 1;
+    padding: 50px;
+}
+
+form {
+    max-width: 25em;
+    margin: 1em auto;
+}
+
+.form-data {
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+footer {
+    background-color: #282828;
+    color: white;
+    padding: 50px;
+}
