@@ -6,7 +6,7 @@
 
     <div class="form-container">
 
-        <form>
+        <form #todoForm ngForm (ngSubmit)="todoSubmit(todoForm.value)">
             <h1>Todo App</h1>
             <div class="form-field-wrapper">
                 <input #todo type="text" class="form-textbox" placeholder="Add Todo" name="todo" ngModel>
@@ -18,7 +18,7 @@
             <ul>
                 <li *ngFor="let todo of todoArray">
                     {{todo}}
-                    <button type="button"><i class="material-icons">delete</i></button>
+                    <button type="button" (click)="deleteItem(todo)" ><i class="material-icons">delete</i></button>
                 </li>
             </ul>
         </div>
